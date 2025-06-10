@@ -17,5 +17,6 @@
 #'
 #' @importFrom brmath P
 #' @importFrom brmath dPdx
+#' @importFrom brmath Pconj
 #'
 NULL
