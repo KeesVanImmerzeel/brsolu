@@ -3,3 +3,6 @@
 export(Br_123_32)
 export(Eta)
 export(Labda)
+export(d_Br_123_32_dx)
+importFrom(brmath,P)
+importFrom(brmath,dPdx)
