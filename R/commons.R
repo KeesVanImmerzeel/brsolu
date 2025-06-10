@@ -1,3 +1,14 @@
+#' Dummy function
+#' @param x Distance (L)
+x_function <- function(x) {
+}
+
+#' Dummy function
+#' @inheritParams x_function
+#' @param t Time (T)
+xt_function <- function(x, t) {
+}
+
 #' Calculate the Leakage factor
 #'
 #' @param kD Hydraulic conductivity (L2/T)

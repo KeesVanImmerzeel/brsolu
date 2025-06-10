@@ -1,18 +1,23 @@
-#' Bruggeman Formula 123.32, p. 66
+#' Formula 123.32, p. 66
 #'
-#' BI. One-dimensional groundwater flow
-#' BI-2. One-dimensional groundwater flow in a semi-infinite field
-#' The soil is assumed to be homogeneous
-#' The flow is non-periodic
-#' The boundary condition at x -- 0 a is given head or drawdown
-#' Leaky aquifers with variable head at x = 0
-#' Sudden drawdown of the surface water level, which is kept constant thereafter.
-#'
-#' Calculate the Head change Phi at distance x and time t due to a stress
+#' Calculate the head change Phi at distance x and time t due to a stress
 #' change h (= sudden drawdown) at t=0 at x=0.
+#'
+#' @section Schematization:
+#'
+#' \itemize{
+#'   \item BI. One-dimensional groundwater flow
+#'   \item BI-2. One-dimensional groundwater flow in a semi-infinite field
+#'   \item The soil is assumed to be homogeneous
+#'   \item The flow is non-periodic
+#'   \item The boundary condition at x = 0 a is given head or drawdown
+#'   \item Leaky aquifers with variable head at x = 0
+#'   \item Sudden drawdown of the surface water level, which is kept constant thereafter.
+#' }
 #'
 #' @param x Distance (L)
 #' @param t Time (T)
+#' @inheritParams xt_function
 #' @inheritParams Labda
 #' @inheritParams Eta
 #' @param h Constant in the definition of the stress (= sudden drawdown) (L)
@@ -25,9 +30,12 @@ Br_123_32 <- function(x, t, S, kD, c, h) {
   return(Phi)
 }
 
-#' Bruggeman Formula 123.32 p. 66
-
+#' Formula 123.32 p. 66 (modified)
+#'
 #' First Derivative of Phi with respect to x
+#'
+#' @inheritSection Br_123_32 Schematization
+#'
 #' @inheritParams Br_123_32
 #' @return First Derivative of Phi with respect to x (-)
 #' @export

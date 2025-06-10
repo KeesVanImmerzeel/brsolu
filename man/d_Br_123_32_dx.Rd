@@ -2,8 +2,7 @@
 % Please edit documentation in R/B1_one_dimensional_flow.R
 \name{d_Br_123_32_dx}
 \alias{d_Br_123_32_dx}
-\title{Bruggeman Formula 123.32 p. 66
-First Derivative of Phi with respect to x}
+\title{Formula 123.32 p. 66 (modified)}
 \usage{
 d_Br_123_32_dx(x, t, S, kD, c, h)
 }
@@ -24,6 +23,19 @@ d_Br_123_32_dx(x, t, S, kD, c, h)
 First Derivative of Phi with respect to x (-)
 }
 \description{
-Bruggeman Formula 123.32 p. 66
 First Derivative of Phi with respect to x
 }
+\section{Schematization}{
+
+
+\itemize{
+\item BI. One-dimensional groundwater flow
+\item BI-2. One-dimensional groundwater flow in a semi-infinite field
+\item The soil is assumed to be homogeneous
+\item The flow is non-periodic
+\item The boundary condition at x = 0 a is given head or drawdown
+\item Leaky aquifers with variable head at x = 0
+\item Sudden drawdown of the surface water level, which is kept constant thereafter.
+}
+}
+
