@@ -29,3 +29,12 @@ Eta <- function(c, S) {
   1 / (c * S)
 }
 
+#' Calculate Beta
+#'
+#' @param kD Hydraulic conductivity (L2/T)
+#' @param S Storage coefficient (-)
+#' @return Beta (T-1)
+#' @export
+Beta <- function(kD, S) {
+  sqrt(S / kD)
+}

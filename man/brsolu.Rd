@@ -13,5 +13,9 @@ Functions as defined in Part A ("Mathematical tools") in the book
 \code{\link{Br_123_32}}
 
 \code{\link{d_Br_123_32_dx}}
+
+\code{\link{Br_123_33}}
+
+\code{\link{Br_123_34}}
 }
 

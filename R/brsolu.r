@@ -9,6 +9,10 @@
 #'
 #' \code{\link{d_Br_123_32_dx}}
 #'
+#' \code{\link{Br_123_33}}
+#'
+#' \code{\link{Br_123_34}}
+#'
 #' @name brsolu
 #'
 #' @importFrom brmath P
